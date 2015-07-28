@@ -57,7 +57,7 @@ void setup() {
   cp5.addToggle("autoAnim").setValue(0).setPosition(guiPosX,guiPosY+30*p).setSize(200, 15); p++;     
   cp5.addButton("testDmx").setValue(0).setPosition(guiPosX,guiPosY+30*p).setSize(200,25); p++;     
   
-  oscP5 = new OscP5(this,55553);  //port55553 softpia hoshi server
+  oscP5 = new OscP5(this,55553);  //port55553 twintower Hoshi server
   //myRemoteLocation = new NetAddress("127.0.0.1",55553);
   myRemoteLocation = new NetAddress("25.10.165.61",55553);
   
@@ -88,7 +88,7 @@ void draw() {
 
   // Tower Simurator ------------------------------------------------------
   fill(255,255,255);
-  text("Simurator:", tsunoSimPosX, tsunoSimPosY-10);
+  text("Simulator:", tsunoSimPosX, tsunoSimPosY-10);
 
   for(int h=0; h<2; h++) {
     for(int i=0; i<8; i++) {
